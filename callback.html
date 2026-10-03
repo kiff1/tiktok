@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autorização — Content AI</title><link rel="stylesheet" href="estilo.css"></head><body><main>
+<h1>Autorização recebida</h1>
+<p id="msg" class="muted">Lendo o retorno...</p>
+<p id="caixa" hidden>Copie o endereço completo desta página (barra de endereço) e cole no terminal do Content AI.<br><br>
+Código: <span class="codigo" id="codigo"></span></p>
+<script>
+  // Só exibe o que veio na URL; nada é enviado a lugar nenhum.
+  var p = new URLSearchParams(location.search);
+  var code = p.get("code"), erro = p.get("error");
+  var msg = document.getElementById("msg");
+  if (code) {
+    msg.textContent = "Autorização concedida.";
+    document.getElementById("codigo").textContent = code;
+    document.getElementById("caixa").hidden = false;
+  } else if (erro) {
+    msg.textContent = "A autorização não foi concedida: " + erro;
+  } else {
+    msg.textContent = "Esta página recebe o retorno do login do Content AI.";
+  }
+</script>
+</main></body></html>
