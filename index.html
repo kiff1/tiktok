@@ -1,8 +1,73 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fábrica de Vídeos</title><link rel="stylesheet" href="estilo.css"></head><body><main>
-<h1>Fábrica de Vídeos</h1>
-<p class="muted">Ferramenta pessoal de produção e publicação de vídeos curtos.</p>
-<p>A Fábrica de Vídeos é uma ferramenta privada, usada por um único criador de conteúdo, para preparar vídeos curtos (cortes e vídeos originais) e publicá-los na própria conta dele no TikTok, no YouTube e no Instagram, depois de revisão e aprovação manual de cada vídeo.</p>
-<p><em>Fábrica de Vídeos is a private tool used by a single creator to prepare short videos and publish them to their own TikTok, YouTube and Instagram accounts after manual review and approval of each video.</em></p>
-<p><a href="termos.html">Termos de Uso / Terms of Service</a> · <a href="privacidade.html">Política de Privacidade / Privacy Policy</a></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fábrica de Vídeos</title>
+<meta name="description" content="Fábrica de Vídeos — a desktop app that helps a creator produce short vertical videos and publish them to their own TikTok, YouTube and Instagram accounts.">
+<link rel="stylesheet" href="estilo.css"><link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head><body><main>
+
+<header class="topo">
+  <a href="index.html" class="marca"><img src="icone.png" alt="" width="40" height="40">Fábrica de Vídeos</a>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#tiktok">TikTok</a><a href="#data">Your data</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <img src="icone.png" alt="Fábrica de Vídeos app icon" width="112" height="112">
+  <div>
+    <h1>Make short videos. Review them. Publish where your audience is.</h1>
+    <p class="muted">Fábrica de Vídeos is a desktop app for content creators. It turns an idea, a script, photos or a long
+    video into finished vertical videos (9:16), and publishes each one to the creator's own TikTok, YouTube and
+    Instagram accounts — only after the creator reviews and approves it.</p>
+  </div>
+</section>
+
+<h2 id="features">Features</h2>
+<div class="cards">
+  <div class="card"><h3>Clips from long videos</h3><p>Finds the best moments of a long video and cuts them into short vertical clips with subtitles.</p></div>
+  <div class="card"><h3>Videos from a script</h3><p>The creator writes the text; the app splits it into scenes, creates the images and records the narration.</p></div>
+  <div class="card"><h3>Videos from photos</h3><p>Turns a set of photos into a narrated video, with gentle camera motion or AI animation.</p></div>
+  <div class="card"><h3>Short series</h3><p>Plans and produces short story episodes with recurring characters and consistent voices.</p></div>
+  <div class="card"><h3>Review before publishing</h3><p>Every video is shown to the creator first. Nothing is posted without a manual "Publish" click.</p></div>
+  <div class="card"><h3>One place to publish</h3><p>Connect TikTok, YouTube and Instagram once, then publish an approved video to the chosen accounts.</p></div>
+</div>
+
+<h2 id="how">How it works</h2>
+<ol class="passos">
+  <li><strong>Create a project</strong> — choose the type (clips, script, photos or series) and add your material.</li>
+  <li><strong>The app produces the video</strong> — on the creator's own computer, using local AI models.</li>
+  <li><strong>Review</strong> — watch the result, approve it or ask for changes.</li>
+  <li><strong>Publish</strong> — pick the accounts and settings and click Publish.</li>
+</ol>
+
+<h2 id="tiktok">Publishing to TikTok</h2>
+<p>Fábrica de Vídeos uses TikTok Login Kit so the creator can connect their own TikTok account, and the Content
+Posting API to upload and post the videos they approved. Before each post the app shows:</p>
+<ul>
+  <li>the name of the TikTok account the video will be posted to;</li>
+  <li>"Who can view this video", with only the privacy options available for that account (no option pre-selected);</li>
+  <li>Allow comments, Duet and Stitch (off by default, and disabled when the account has turned them off);</li>
+  <li>commercial content disclosure (Your brand / Branded content);</li>
+  <li>TikTok's Music Usage Confirmation and, when applicable, Branded Content Policy.</li>
+</ul>
+<p>Permissions requested: <code>user.info.basic</code> (show which account is connected), <code>video.upload</code> and
+<code>video.publish</code> (post the approved video). The app does not read followers, messages, other users' data or
+analytics.</p>
+
+<h2 id="data">Your data</h2>
+<p>Access tokens, basic account info (display name and ID) and the videos stay on the creator's own computer. Nothing is
+sold or shared with third parties; a video is sent only to the platform the creator chose when publishing. Access can be
+revoked at any time in the authorized apps settings of TikTok, Google and Instagram. Read the full
+<a href="privacidade.html">Privacy Policy</a> and <a href="termos.html">Terms of Service</a>.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Questions about the app or your data: send a direct message to the channel's TikTok account.</p>
+
+<h2 lang="pt-BR">Em português</h2>
+<p lang="pt-BR" class="muted">A Fábrica de Vídeos é um app de computador para criadores de conteúdo: transforma uma ideia, um
+roteiro, fotos ou um vídeo longo em vídeos verticais prontos e os publica nas contas do próprio criador no TikTok, no
+YouTube e no Instagram, sempre depois da revisão e aprovação de cada vídeo.
+<a href="termos.html">Termos de Uso</a> · <a href="privacidade.html">Política de Privacidade</a></p>
+
+<footer class="rodape">
+  <span>© 2026 Fábrica de Vídeos</span>
+  <span><a href="termos.html">Terms of Service</a> · <a href="privacidade.html">Privacy Policy</a></span>
+</footer>
 </main></body></html>
